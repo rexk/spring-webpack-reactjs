@@ -292,3 +292,9 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
+
+## Project specific ignore file
+## We are going ignore public folder because all javascript files public folder will be generated via Webpack
+## 현 프로젝트용 ignore file
+## public 폴더안의 모든 파일들은 Webpack을 통하여 생성될 것이기 때문에, 모두 무시한다.
+public/
