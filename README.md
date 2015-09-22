@@ -12,6 +12,7 @@ java -jar target/gs-serving-web-content-0.1.0.jar
 
 또 다른 터미널 세션을 열어 아래 커맨드를 작동 시킨다.
 ```bash
+npm install
 npm start
 ```
 
@@ -21,6 +22,7 @@ http://localhost:3000으로 고고.
 1. IDE로 자바 서버를 동작시킨다.
 2. 프로젝트 폴더로 돌아와 아래 코드를 작동 시킨다.
 ```bash
+  npm install
   npm start
 ```
 
