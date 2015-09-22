@@ -1,3 +1,4 @@
+// Dev Mode Webpack Configuration
 var path = require('path');
 var webpack = require('webpack');
 
@@ -19,13 +20,14 @@ module.exports = {
   devtool: 'source-map',
 
   module: {
-    loaders: [
-      {
-        test: /\.js?$/,
-        loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src')
-      }
-    ]
+    loaders: [{
+      test: /\.js?$/,
+      loaders: ['react-hot', 'babel'],
+      include: path.join(__dirname, 'src')
+    }, {
+      test: /\.less$/,
+      loader: 'style!css!less!autoprefixer'
+    }]
   },
 
   plugins: [
