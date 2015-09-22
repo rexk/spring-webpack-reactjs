@@ -26,10 +26,11 @@ class TodoList extends Component {
     const { items } = this.props;
 
     return (
-      <div>
+      <div className={this.props.className}>
         {
           _.map(items, (item) =>
             <TodoItem
+              className='todo-item'
               key={item.id}
               item={item}
               onChange={e => this.props.onItemChange(e)}

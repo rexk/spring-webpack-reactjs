@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React from 'react';
 import TodoList from '../components/TodoList';
+import './TodoApp.less';
 
 let initialState = [
   {
@@ -61,9 +62,10 @@ class TodoApp extends React.Component {
   render() {
     const { items } = this.state;
     return (
-      <div>
+      <div className='todo-app'>
         <h1>TodoApp</h1>
-        <TodoList items={_.values(items)}
+        <TodoList className='todo-list'
+          items={_.values(items)}
           onItemChange={(item) => this.handleItemChagne(item)}
           onItemDelete={item => this.handleItemDelete(item)}/>
         <button onClick={() => { this.handleAddItem(); }}>

@@ -26,7 +26,7 @@ export default class TodoItem extends Component {
     const { label, checked } = item;
 
     return (
-      <div>
+      <div className={this.props.className}>
         <input type='checkbox'
           checked={checked}
           onChange={() => this.handleCheckBoxChange()} />
